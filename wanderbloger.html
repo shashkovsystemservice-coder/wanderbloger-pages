@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wanderbloger — ссылки</title>
+<style>
+  :root{
+    --bg1:#001a66;
+    --bg2:#009999;
+    --btn1:#0044cc;
+    --btn2:#00cc99;
+    --text:#ffffff;
+    --muted: rgba(255,255,255,.7);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color:var(--text);
+    background: radial-gradient(1200px 800px at 20% -10%, rgba(255,255,255,.06), transparent 50%),
+                linear-gradient(135deg,var(--bg1),var(--bg2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card{
+    width:100%;
+    max-width:560px;
+    background: rgba(255,255,255,.06);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  }
+  h1{
+    margin:0 0 8px 0;
+    font-size: clamp(28px, 6vw, 44px);
+    letter-spacing:.2px;
+  }
+  p.subtitle{
+    margin:0 0 22px 0;
+    color: var(--muted);
+    font-size: clamp(14px, 3.5vw, 18px);
+  }
+  .links{display:flex; flex-direction:column; gap:14px;}
+  a.btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#fff;
+    padding: 16px 18px;
+    border-radius: 999px;
+    font-size: clamp(18px, 4.5vw, 22px);
+    font-weight: 600;
+    background: linear-gradient(90deg,var(--btn1),var(--btn2));
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+  }
+  a.btn:active{ transform: scale(.98); filter: brightness(.97);}
+  .icon{
+    width:30px; height:30px; flex:0 0 30px;
+  }
+  .footer{
+    margin-top:18px;
+    color: var(--muted);
+    font-size:13px;
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Wanderbloger</h1>
+    <p class="subtitle">Следи за мной на всех платформах 🚀</p>
+
+    <div class="links">
+      <!-- Telegram -->
+      <a class="btn" href="https://t.me/ToBarcelona" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 240 240" aria-hidden="true">
+          <circle cx="120" cy="120" r="120" fill="rgba(255,255,255,.18)"/>
+          <path d="M196 62L169 184c-2 9-8 11-16 7l-46-34-22 21c-2 2-4 3-7 3l3-47 86-78c4-3-1-5-6-2l-106 67-45-14c-10-3-10-10 2-15l177-68c8-3 16 2 13 14z" fill="white"/>
+        </svg>
+        <span>Телеграмм</span>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn" href="https://www.instagram.com/wander.bloger?igsh=MTVndjAzdnQxZDFtaA%3D%3D&utm_source=qr" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 512 512" aria-hidden="true">
+          <rect x="64" y="64" width="384" height="384" rx="96" ry="96" fill="rgba(255,255,255,.18)"/>
+          <path d="M256 164c-50.7 0-92 41.3-92 92s41.3 92 92 92 92-41.3 92-92-41.3-92-92-92zm0-36c70.6 0 128 57.4 128 128s-57.4 128-128 128-128-57.4-128-128 57.4-128 128-128zm130-6a26 26 0 11-52 0 26 26 0 0152 0z" fill="white"/>
+        </svg>
+        <span>Инстаграмм</span>
+      </a>
+
+      <!-- Yandex Dzen -->
+      <a class="btn" href="https://dzen.ru/id/68d53ade360c18764d7d3a5c" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="rgba(255,255,255,.18)"/>
+          <path d="M50 16c8 0 14 2 18 6s6 10 6 18c0 8-2 14-6 18s-10 6-18 6h-4V84H34V16h16z" fill="white"/>
+        </svg>
+        <span>Яндекс Дзен</span>
+      </a>
+    </div>
+
+    <div class="footer">( Офлайн‑страница — можно открывать без интернета )</div>
+  </main>
+</body>
+</html>
